@@ -1,0 +1,21 @@
+@mixin scroll_vertical($width: 4px, $overflow-y: scroll) {
+  overflow-y: $overflow-y;
+  &::-webkit-scrollbar {
+    background-color: #ddd;
+    width: $width;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $teal;
+  }
+}
+
+@mixin scroll_horizontal($height: 6px) {
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    background-color: #ddd;
+    height: $height;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+  }
+}
