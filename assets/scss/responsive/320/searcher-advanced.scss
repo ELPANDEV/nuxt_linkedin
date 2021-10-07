@@ -1,0 +1,30 @@
+.v-searcher-advanced {
+  display: grid;
+  background-color: var(--cool-gray-20);
+  border-radius: 4px;
+  max-width: 280px;
+  form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 8px;
+    place-items: center;
+    padding-left: 16px;
+    .v-button {
+      padding: 0;
+      > svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--black-a60);
+      }
+    }
+    .v-input {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      input {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}

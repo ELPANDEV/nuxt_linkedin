@@ -1,0 +1,12 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z"
+    ></path>
+  </svg>
+</template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({})
+</script>

@@ -1,0 +1,12 @@
+.v-header {
+  > .container {
+    .v-link {
+      &.notifications {
+        display: grid;
+      }
+    }
+    .navigation {
+      grid-template-columns: repeat(6, 48px);
+    }
+  }
+}

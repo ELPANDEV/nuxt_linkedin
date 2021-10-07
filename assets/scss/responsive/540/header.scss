@@ -1,0 +1,17 @@
+.v-header {
+  > .container {
+    .v-button {
+      &.menu {
+        display: grid;
+        svg {
+          &.dots {
+            display: none;
+          }
+          &.grid {
+            display: grid;
+          }
+        }
+      }
+    }
+  }
+}

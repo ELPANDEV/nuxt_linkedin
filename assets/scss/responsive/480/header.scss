@@ -1,0 +1,20 @@
+.v-header {
+  > .container {
+    gap: 0 3px;
+    .v-button {
+      &.profile {
+        display: grid;
+        .v-picture {
+          width: 24px;
+          height: 24px;
+          img {
+            padding: 3px;
+          }
+        }
+      }
+    }
+    .navigation {
+      grid-template-columns: repeat(7, minmax(48px, 56px));
+    }
+  }
+}

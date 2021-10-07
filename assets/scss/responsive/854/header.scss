@@ -1,0 +1,52 @@
+.v-header {
+  > .container {
+    grid-template-columns: repeat(2, 56px) 1fr;
+    .v-link {
+      &:not(.linkedin, .premium) {
+        position: relative;
+        &::after {
+          content: " ";
+          width: 0;
+          height: 1.5px;
+          background-color: black;
+          transition: 0.3s;
+          position: absolute;
+          bottom: -1px;
+        }
+        &.nuxt-link-active {
+          &::after {
+            width: 100%;
+          }
+          > span {
+            color: black;
+          }
+        }
+      }
+    }
+    .v-link, .v-button {
+      &:not(.linkedin, .premium) {
+        padding: 5.5px 0 4px 0;
+      }
+      > span {
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--black-a60);
+        svg {
+          width: 18px;
+          height: 16px;
+          fill: var(--black-a60);
+        }
+      }
+      &.profile, &.menu {
+        > span {
+          grid-template-columns: 1fr auto;
+        }
+      }
+    }
+    .navigation {
+      grid-template-columns: repeat(7, 80px) 1fr;
+    }
+  }
+}

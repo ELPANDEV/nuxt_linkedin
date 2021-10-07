@@ -1,0 +1,67 @@
+.v-header {
+  padding: 0 0 0 12px;
+  background-color: white;
+  border-bottom: 1px solid var(--warm-gray-30);
+  > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 56px) 1fr;
+    align-items: center;
+    .v-searcher-advanced {
+      display: none;
+    }
+    .v-link, .v-button {
+      display: grid;
+      place-items: center;
+      &:not(.linkedin, .premium) {
+        padding: 15px 0;
+      }
+      > span {
+        display: none;
+      }
+    }
+    .v-button {
+      &.search {
+        svg {
+          fill: var(--black-a60);
+        }
+      }
+      &.menu {
+        svg {
+          &.grid {
+            display: none;
+          }
+        }
+      }
+      &.profile {
+        display: none;
+      }
+    }
+    .v-link {
+      &.linkedin {
+        svg {
+          width: 34px;
+          height: 36px;
+          fill: var(--blue-70);
+        }
+      }
+      &.messages, &.notifications, &.premium {
+        display: none;
+      }
+      &.home, &.network, &.jobs, &.messages, &.notifications {
+        svg {
+          fill: var(--black-a60);
+        }
+        &.nuxt-link-active {
+          svg {
+            fill: black;
+          }
+        }
+      }
+    }
+    .navigation {
+      display: grid;
+      grid-template-columns: repeat(4, 48px);
+      align-items: center;
+    }
+  }
+}

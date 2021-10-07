@@ -1,0 +1,16 @@
+.v-header {
+  > .container {
+    grid-template-columns: auto 56px 1fr;
+    .v-link {
+      &.premium {
+        display: grid;
+        font-size: 12px;
+        color: var(--amber-70);
+        justify-self: baseline;
+      }
+    }
+    .navigation {
+      grid-template-columns: repeat(7, minmax(48px, 56px)) 1fr;
+    }
+  }
+}

@@ -6,8 +6,7 @@
   font-size: 16px;
   color: #3c3c3c;
   box-sizing: border-box;
-  word-spacing: 1px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 
 a {
@@ -19,7 +18,11 @@ ul, ol {
 }
 
 svg {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   fill: black;
+}
+
+body {
+  background-color: var(--warm-gray-20);
 }

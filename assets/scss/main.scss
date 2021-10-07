@@ -1,29 +1,52 @@
+@import './root.scss';
 @import './variables.scss';
 @import './mixins.scss';
 @import './formatter.scss';
 
-@media screen and (min-width: $w480) {
+@import './responsive/320/header.scss';
+@import './responsive/320/searcher-advanced.scss';
+@import './responsive/320/button.scss';
+@import './responsive/320/input.scss';
+@import './responsive/320/picture.scss';
 
+@media screen and (min-width: $w360) {
+  @import './responsive/360/header.scss';
+}
+
+@media screen and (min-width: $w420) {
+  @import './responsive/420/header.scss';
+}
+
+@media screen and (min-width: $w480) {
+  @import './responsive/480/header.scss';
+}
+
+@media screen and (min-width: $w540) {
+  @import './responsive/540/header.scss';
 }
 
 @media screen and (min-width: $w640) {
-
+  @import './responsive/640/header.scss';
 }
 
 @media screen and (min-width: $w768) {
-
+  
 }
 
 @media screen and (min-width: $w854) {
-
+  @import './responsive/854/header.scss';
 }
 
 @media screen and (min-width: $w960) {
-
+  
 }
 
 @media screen and (min-width: $w1024) {
+  @import './responsive/1024/header.scss';
+}
 
+@media screen and (min-width: $w1156) {
+  @import './responsive/1156/header.scss';
 }
 
 @media screen and (min-width: $w1280) {
