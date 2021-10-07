@@ -29,10 +29,15 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/main.ts',
+    '~/plugins/axios.ts',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    { path: '~/components/',  prefix: 'v-'     },
+    { path: '~/assets/svgs/', prefix: 'v-svg-' },
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -51,5 +56,17 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    filenames: {
+      chunk: ({ isDev }) => {
+        return isDev
+          ? '[name].js'
+          : '[id].[contenthash].js'
+      }
+    }
+  },
+
+  // publicRuntimeConfig: {
+  //   BACKEND_URL: process.env.BACKEND_URL || 'http://127.0.0.1:8000',
+  //   STORAGE_URL: process.env.STORAGE_URL || 'https://storage.googleapis.com/local_receta_land',
+  // }
 }
