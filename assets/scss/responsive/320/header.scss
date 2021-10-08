@@ -60,8 +60,14 @@
     }
     .navigation {
       display: grid;
-      grid-template-columns: repeat(4, 48px);
+      grid-template-columns: repeat(3, minmax(44px, 48px)) 1fr;
       align-items: center;
+      .v-button {
+        &.menu {
+          justify-self: left;
+          padding-left: 12px;
+        }
+      }
     }
   }
 }

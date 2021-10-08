@@ -3,11 +3,15 @@
 @import './mixins.scss';
 @import './formatter.scss';
 
+@import './responsive/320/layouts/default.scss';
+
 @import './responsive/320/header.scss';
+@import './responsive/320/body.scss';
 @import './responsive/320/searcher-advanced.scss';
 @import './responsive/320/button.scss';
 @import './responsive/320/input.scss';
 @import './responsive/320/picture.scss';
+@import './responsive/320/widget/profile.scss';
 
 @media screen and (min-width: $w360) {
   @import './responsive/360/header.scss';
