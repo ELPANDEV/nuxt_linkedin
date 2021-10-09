@@ -6,6 +6,9 @@ class Store {
   public loader:      any      = null
   public posts = []
   public alert_copyright_enabled = true
+  public profile = {
+    enabled: false
+  }
   
   constructor() {
 

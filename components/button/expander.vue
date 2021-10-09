@@ -13,17 +13,20 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    event_name: String
+    initial_enabled: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {
-      enabled: false
+      enabled: this.initial_enabled
     }
   },
   methods: {
     change() {
       this.enabled = !this.enabled
-      this.$root.$emit(this.event_name, this.enabled)
+      this.$emit('on_click', this.enabled)
     }
   }
 })

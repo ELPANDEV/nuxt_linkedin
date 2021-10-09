@@ -10,7 +10,7 @@
       <p>Laravel, Vue/Nuxt Developer</p>
     </header>
 
-    <div v-if="enabled" class="body">
+    <div v-if="store.profile.enabled" class="body">
       <div class="social">
         <v-widget-profile-link class="title-bolder"
           :to="'/'"
@@ -50,16 +50,6 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  data() {
-    return {
-      enabled: false
-    }
-  },
-  created() {
-    this.$root.$on('expand_profile', (enabled: boolean) => this.enabled = enabled)
-  },
-  destroyed() {
-    this.$root.$off('expand_profile')
-  }
+
 })
 </script>

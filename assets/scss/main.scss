@@ -7,11 +7,13 @@
 
 @import './responsive/320/header.scss';
 @import './responsive/320/body.scss';
+@import './responsive/320/link.scss';
 @import './responsive/320/searcher-advanced.scss';
 @import './responsive/320/button.scss';
 @import './responsive/320/input.scss';
 @import './responsive/320/picture.scss';
 @import './responsive/320/widget/profile.scss';
+@import './responsive/320/widget/history.scss';
 
 @media screen and (min-width: $w360) {
   @import './responsive/360/header.scss';
@@ -34,7 +36,7 @@
 }
 
 @media screen and (min-width: $w768) {
-  
+  @import './responsive/768/body.scss';
 }
 
 @media screen and (min-width: $w854) {
@@ -42,7 +44,7 @@
 }
 
 @media screen and (min-width: $w960) {
-  
+  @import './responsive/960/body.scss';
 }
 
 @media screen and (min-width: $w1024) {
@@ -51,6 +53,7 @@
 
 @media screen and (min-width: $w1156) {
   @import './responsive/1156/header.scss';
+  @import './responsive/1156/body.scss';
 }
 
 @media screen and (min-width: $w1280) {

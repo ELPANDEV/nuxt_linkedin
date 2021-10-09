@@ -2,8 +2,12 @@
   <v-body class="x-feed-index">
     <div class="sidebar-left">
       <v-widget-profile />
-      <v-widget-history />
-      <v-button-expander :event_name="'expand_profile'" />
+      <v-widget-history v-if="store.profile.enabled" />
+      <v-button-expander
+        @on_click="(enabled) => {
+          store.profile.enabled = enabled
+        }"
+      />
     </div>
     <div class="sidebar-center">
 

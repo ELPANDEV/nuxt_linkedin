@@ -1,23 +1,45 @@
 <template>
-  <div class="history">
-    <section>
-      <h3>Recientes</h3>
-      <v-link-hash to="/">vue</v-link-hash>
-      <v-link-hash to="/">vue</v-link-hash>
-      <v-link-hash to="/">laravel</v-link-hash>
-      <v-link-hash to="/">javascript</v-link-hash>
-      <v-link-hash to="/">marketing digital</v-link-hash>
-      <v-link-hash to="/">diseño web</v-link-hash>
-    </section>
-    <v-link class="section" to="/">Grupos</v-link>
-    <v-link class="section" to="/">Eventos<v-svg-add /></v-link>
-    <section>
-      <v-link class="section" to="/">Hashtags seguidos<v-svg-add /></v-link>
-      <v-link-hash to="/"><v-svg-hash />vue</v-link-hash>
-      <v-link-hash to="/"><v-svg-hash />laravel</v-link-hash>
-      <v-link-hash to="/"><v-svg-hash />javascript</v-link-hash>
-    </section>
-    <v-link to="/">Ver más</v-link>
+  <div class="v-widget-history">
+    <v-widget-history-section :title="'Recientes'">
+      <template #body>
+        <v-link class="leading" to="/"><v-svg-hash />vue</v-link>
+        <v-link class="leading" to="/"><v-svg-hash />vue</v-link>
+        <v-link class="leading" to="/"><v-svg-hash />laravel</v-link>
+        <v-link class="leading" to="/"><v-svg-hash />javascript</v-link>
+        <v-link class="leading" to="/"><v-svg-hash />marketing digital</v-link>
+        <v-link class="leading" to="/"><v-svg-hash />diseño web</v-link>
+      </template>
+    </v-widget-history-section>
+
+    <v-widget-history-section
+      :title="'Grupos'"
+      :title_linked_to="'/'"
+    />
+
+    <v-widget-history-section
+      :title="'Eventos'"
+      :title_linked_to="'/'"
+    >
+      <template #header-actions>
+        <v-svg-add />
+      </template>
+    </v-widget-history-section>
+
+    <v-widget-history-section
+      :title="'Hashtags seguidos'"
+      :title_linked_to="'/'"
+    >
+      <template #header-actions>
+        
+      </template>
+      <template #body>
+        <v-link class="leading" to="/"><v-svg-hash />vue</v-link>
+        <v-link class="leading" to="/"><v-svg-hash />laravel</v-link>
+        <v-link class="leading" to="/"><v-svg-hash />javascript</v-link>
+      </template>
+    </v-widget-history-section>
+
+    <v-link class="more" to="/">Ver más</v-link>
   </div>
 </template>
 
