@@ -1,6 +1,16 @@
 <template>
   <v-body class="x-feed-index">
-    <v-widget-profile />
+    <div class="sidebar-left">
+      <v-widget-profile />
+      <v-widget-history />
+      <v-button-expander :event_name="'expand_profile'" />
+    </div>
+    <div class="sidebar-center">
+
+    </div>
+    <div class="sidebar-rigth">
+
+    </div>
     <!-- <v-widget-post-creator />
     <v-widget-post-organizer /> -->
 

@@ -1,6 +1,8 @@
 <template>
-  <article class="v-widget-profile" :class="{ enabled }">
-    <div class="bg-image"></div>
+  <article class="v-widget-profile">
+    <div class="bg-image">
+      <v-svg-bg-profile-image />
+    </div>
 
     <header>
       <v-picture class="rounded" :src="'/images/profile.jfif'" />
@@ -9,66 +11,39 @@
     </header>
 
     <div v-if="enabled" class="body">
-      <div class="information">
-        <div class="social">
-          <div>
-            <div>
-              <span>Contactos</span>
-              <span>Amplía tu red</span>
-            </div>
-            <span>54</span>
-          </div>
-          <div>
-            <div>
-              <span>Quién ha visto tu perfil</span>
-            </div>
-            <span>67</span>
-          </div>
-        </div>
-
-        <v-link class="premium" to="/">
-          <span>Accede a información y herramientas exclusivas</span>
-          <div>
-            <v-svg-premium />
-            <span>Probar Premium gratis</span>
-          </div>
-        </v-link>
-
-        <div class="labels">
-          <div>
-            <v-svg-label />
-            <span>Marcapáginas</span>
-          </div>
-        </div>
+      <div class="social">
+        <v-widget-profile-link class="title-bolder"
+          :to="'/'"
+          :title="'Contactos'"
+          :subtitle="'Amplía tu red'"
+          :counter="54"
+        />
+        <v-widget-profile-link class="title-bolder title-separator"
+          :to="'/'"
+          :title="'Quién ha visto tu perfil'"
+          :counter="67"
+        />
       </div>
-      <div class="history">
-        <section>
-          <h3>Recientes</h3>
-          <v-link-hash to="/">vue</v-link-hash>
-          <v-link-hash to="/">vue</v-link-hash>
-          <v-link-hash to="/">laravel</v-link-hash>
-          <v-link-hash to="/">javascript</v-link-hash>
-          <v-link-hash to="/">marketing digital</v-link-hash>
-          <v-link-hash to="/">diseño web</v-link-hash>
-        </section>
-        <v-link class="section" to="/">Grupos</v-link>
-        <v-link class="section" to="/">Eventos<v-svg-add/></v-link>
-        <section>
-          <v-link class="section" to="/">Hashtags seguidos<v-svg-add/></v-link>
-          <v-link-hash to="/"><v-svg-hash />vue</v-link-hash>
-          <v-link-hash to="/"><v-svg-hash />laravel</v-link-hash>
-          <v-link-hash to="/"><v-svg-hash />javascript</v-link-hash>
-        </section>
-        <v-link to="/">Ver más</v-link>
+
+      <div>
+        <v-widget-profile-link
+          :to="'/'"
+          :title="'Accede a información y herramientas exclusivas'"
+          :subtitle="'Probar Premium gratis'"
+        >
+          <v-svg-premium slot="subtitle-svg" />
+        </v-widget-profile-link>
+      </div>
+
+      <div class="labels">
+        <v-widget-profile-link class="title-bolder"
+          :to="'/'"
+          :subtitle="'Marcapáginas'"
+        >
+          <v-svg-label slot="subtitle-svg" />
+        </v-widget-profile-link>
       </div>
     </div>
-
-    <footer>
-      <v-button @click.native="enabled = !enabled">
-        Mostrar más
-        <v-svg-arrow-down-larger />
-      </v-button>
-    </footer>
   </article>
 </template>
 
@@ -79,6 +54,12 @@ export default Vue.extend({
     return {
       enabled: false
     }
+  },
+  created() {
+    this.$root.$on('expand_profile', (enabled: boolean) => this.enabled = enabled)
+  },
+  destroyed() {
+    this.$root.$off('expand_profile')
   }
 })
 </script>

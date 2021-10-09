@@ -1,26 +1,11 @@
 .v-body {
   width: 100%;
-  &.x-page-index {
-    .v-button {
-      &.more-profile {
-        display: grid;
-        place-items: center;
-        padding-top: 12px;
-        .v-button {
-          display: grid;
-          grid-template-columns: repeat(2, auto);
-          gap: 0 4px;
-          place-items: center;
-          font-weight: 500;
-          font-size: 15px;
-          color: var(--black-a60);
-          svg {
-            width: 18px;
-            height: 18px;
-            fill: var(--black-a60);
-          }
-        }
-      }
+}
+
+.v-body.x-feed-index {
+  .v-button {
+    &.v-expander {
+      margin: 0 auto;
     }
   }
 }
