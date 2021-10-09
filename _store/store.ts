@@ -5,6 +5,7 @@ class Store {
   public modal_local: any      = null
   public loader:      any      = null
   public posts = []
+  public alert_copyright_enabled = true
   
   constructor() {
 

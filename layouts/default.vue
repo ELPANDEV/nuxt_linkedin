@@ -3,6 +3,8 @@
     <v-header />
 
     <nuxt />
+
+    <v-alert-copyright v-if="store.alert_copyright_enabled" />
   </div>
 </template>
 
