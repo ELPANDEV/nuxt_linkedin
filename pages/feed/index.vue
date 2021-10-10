@@ -10,13 +10,12 @@
       />
     </div>
     <div class="sidebar-center">
-
+      <v-widget-post-creator />
     </div>
     <div class="sidebar-rigth">
 
     </div>
-    <!-- <v-widget-post-creator />
-    <v-widget-post-organizer /> -->
+    <!-- <v-widget-post-organizer /> -->
 
     <!-- <v-widget-post
       v-for="(post, i) in store.posts"

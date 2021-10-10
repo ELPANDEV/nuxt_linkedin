@@ -1,0 +1,11 @@
+.v-widget-post-creator {
+  > .footer {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: left;
+    .v-button {
+      &.article {
+        grid-column: auto;
+      }
+    }
+  }
+}

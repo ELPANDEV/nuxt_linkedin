@@ -14,6 +14,7 @@
 @import './responsive/320/picture.scss';
 @import './responsive/320/widget/profile.scss';
 @import './responsive/320/widget/history.scss';
+@import './responsive/320/widget/post-creator.scss';
 
 @media screen and (min-width: $w360) {
   @import './responsive/360/header.scss';
@@ -21,6 +22,7 @@
 
 @media screen and (min-width: $w420) {
   @import './responsive/420/header.scss';
+  @import './responsive/420/widget/post-creator.scss';
 }
 
 @media screen and (min-width: $w480) {
@@ -56,6 +58,7 @@
 @media screen and (min-width: $w1156) {
   @import './responsive/1156/header.scss';
   @import './responsive/1156/body.scss';
+  @import './responsive/1156/widget/post-creator.scss';
 }
 
 @media screen and (min-width: $w1280) {
