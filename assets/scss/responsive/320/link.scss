@@ -1,8 +1,21 @@
 .v-link {
-  &.leading {
+  &.leading, &.actions {
     display: grid;
-    grid-template-columns: auto 1fr;
     gap: 0 12px;
     align-items: center;
+  }
+  &.leading {
+    grid-template-columns: auto 1fr;
+  }
+  &.actions {
+    grid-template-columns: 1fr auto;
+  }
+  &.hover {
+    &-underline {
+      &:hover {
+        text-decoration: underline;
+        color: var(--color-action) !important;
+      }
+    }
   }
 }
