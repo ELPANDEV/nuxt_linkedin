@@ -15,6 +15,9 @@
     </div>
     <div class="sidebar-rigth">
       <v-widget-suggestions />
+      <div>
+        <v-widget-advertisement />
+      </div>
     </div>
   </v-body>
 </template>

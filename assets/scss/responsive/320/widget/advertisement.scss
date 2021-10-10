@@ -1,0 +1,53 @@
+.v-widget-advertisement {
+  background-color: white;
+  padding: 12px 12px 18px 12px;
+  > header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 0 8px;
+    h3 {
+      font-size: 13px;
+      font-weight: 400;
+    }
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+    }
+  }
+  > .body {
+    display: grid;
+    gap: 6px 0;
+    text-align: center;
+    > p {
+      &.message {
+        font-size: 13px;
+      }
+      &.description {
+        font-size: 15px;
+      }
+    }
+    > .images {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+      gap: 0 18px;
+      .v-picture {
+        @include size(70px);
+      }
+    }
+  }
+  > footer {
+    display: grid;
+    place-items: center;
+    margin-top: 12px;
+    .v-button {
+      border: 1px solid var(--blue-70);
+      color: var(--blue-70);
+      padding: 4px 12px;
+      border-radius: 24px;
+      font-weight: 500;
+    }
+  }
+}
