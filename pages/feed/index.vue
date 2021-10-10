@@ -11,6 +11,7 @@
     </div>
     <div class="sidebar-center">
       <v-widget-post-creator />
+      <v-button-organizer />
     </div>
     <div class="sidebar-rigth">
 
