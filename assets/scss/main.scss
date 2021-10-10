@@ -14,7 +14,9 @@
 @import './responsive/320/picture.scss';
 @import './responsive/320/widget/profile.scss';
 @import './responsive/320/widget/history.scss';
+@import './responsive/320/widget/suggestions.scss';
 @import './responsive/320/widget/post-creator.scss';
+@import './responsive/320/user-suggestion.scss';
 
 @media screen and (min-width: $w360) {
   @import './responsive/360/header.scss';

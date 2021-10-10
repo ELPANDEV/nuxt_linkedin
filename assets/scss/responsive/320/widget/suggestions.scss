@@ -1,0 +1,34 @@
+.v-widget-suggestions {
+  display: grid;
+  gap: 12px 0;
+  background-color: white;
+  padding: 12px 15px;
+  > .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-top: 6px;
+    .title {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    svg {
+      @include size(16px);
+    }
+  }
+  > .body {
+    display: grid;
+    gap: 12px 0;
+  }
+  > .footer {
+    .v-button {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--black-a60);
+      padding: 4px 6px;
+      svg {
+        @include size(16px);
+        fill: var(--black-a60);
+      }
+    }
+  }
+}

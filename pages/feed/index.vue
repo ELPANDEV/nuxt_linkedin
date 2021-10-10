@@ -14,15 +14,8 @@
       <v-button-organizer />
     </div>
     <div class="sidebar-rigth">
-
+      <v-widget-suggestions />
     </div>
-    <!-- <v-widget-post-organizer /> -->
-
-    <!-- <v-widget-post
-      v-for="(post, i) in store.posts"
-      :key="`post${i}${uuid}`"
-      :post="post"
-    /> -->
   </v-body>
 </template>
 

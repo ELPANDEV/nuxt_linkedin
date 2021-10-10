@@ -20,4 +20,10 @@
       max-height: 124%;
     }
   }
+  &.sized {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
 }

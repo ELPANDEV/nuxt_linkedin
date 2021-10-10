@@ -25,3 +25,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
