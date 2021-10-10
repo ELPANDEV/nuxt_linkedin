@@ -2,4 +2,18 @@
   display: grid;
   grid-template-columns: 204px 494px;
   justify-content: center;
+  > * {
+    align-content: baseline;
+  }
+}
+
+.v-body.x-feed-index {
+  .sidebar-left {
+    > .v-button.v-expander {
+      display: none;
+    }
+  }
+  .sidebar-center {
+    min-height: 2000px;
+  }
 }

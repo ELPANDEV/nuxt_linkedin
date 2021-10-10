@@ -2,7 +2,7 @@
   <v-body class="x-feed-index">
     <div class="sidebar-left">
       <v-widget-profile />
-      <v-widget-history v-if="store.profile.enabled" />
+      <v-widget-history v-show="store.profile.enabled" />
       <v-button-expander
         @on_click="(enabled) => {
           store.profile.enabled = enabled

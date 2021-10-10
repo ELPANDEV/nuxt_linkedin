@@ -10,7 +10,7 @@
       <p>Laravel, Vue/Nuxt Developer</p>
     </header>
 
-    <div v-if="store.profile.enabled" class="body">
+    <div v-show="store.profile.enabled" class="body">
       <div class="social">
         <v-widget-profile-link class="title-bolder"
           :to="'/'"

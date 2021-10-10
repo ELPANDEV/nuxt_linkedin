@@ -1,5 +1,9 @@
 .v-body {
   width: 100%;
+  > * {
+    display: grid;
+    gap: 8px 0;
+  }
 }
 
 .v-body.x-feed-index {
