@@ -1,9 +1,9 @@
 <template>
   <div class="v-alert-copyright">
     <div class="container">
-      <h3>Alert</h3>
+      <h3>- - - - - important - - - - -</h3>
       <p>I created this copy of Linkedin to <b>show my skills to IT recruiters</b>, if you need to watch the code of this page, let me know <b>¿Who are you?</b> and <b>¿Why you need the code?</b>.</p>
-      <p>If you are not a IT recruiter leaves this page.</p>
+      <p>If you are not an IT recruiter leaves this page.</p>
       <div class="buttons">
         <v-button @click.native="store.alert_copyright_enabled = false">I'm IT Recruiter</v-button>
         <v-button @click.native="leave()">exit</v-button>
@@ -74,7 +74,7 @@ export default Vue.extend({
         font-weight: 500;
         text-transform: uppercase;
         &:first-of-type {
-          background-color: green;
+          background-color: limegreen;
         }
         &:last-of-type {
           background-color: red;
