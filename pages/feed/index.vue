@@ -13,10 +13,17 @@
         }"
       />
     </div>
+
     <div class="sidebar-center">
       <v-widget-post-creator />
       <v-button-organizer />
+      <v-widget-post
+        v-for="(post, i) in store.posts"
+        :key="`post${i}${uuid}`"
+        :post="post"
+      />
     </div>
+
     <div class="sidebar-right">
       <v-widget-suggestions />
       <div class="sticky">

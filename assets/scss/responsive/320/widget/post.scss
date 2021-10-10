@@ -1,0 +1,111 @@
+.v-widget-post {
+  background-color: white;
+  > header {
+    padding: 12px 15px;
+    .suggestion {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding: 0 0 6px 0;
+      border-bottom: 1px solid var(--color-border-faint);
+      .message {
+        font-size: 13px;
+        b {
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+      svg {
+        fill: var(--black-a60);
+      }
+    }
+    .profile {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0 9px;
+      padding-top: 12px;
+      > .v-picture {
+        @include size(48px);
+      }
+      .information {
+        display: grid;
+        align-content: baseline;
+        h2, p, span {
+          line-height: 1.4;
+        }
+        h2 {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        p, span {
+          font-size: 12px;
+          color: var(--black-a60);
+        }
+      }
+    }
+  }
+  > .body {
+    display: grid;
+    .text {
+      font-size: 14px;
+      padding: 0 18px 12px 18px;
+    }
+    .v-picture {
+      width: 100%;
+      height: auto;
+      img {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+  > footer {
+    padding: 6px 12px;
+    .reactions {
+      display: flex;
+      align-items: center;
+      gap: 0 6px;
+      border-bottom: 1px solid var(--color-border-faint);
+      padding-bottom: 9px;
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 0 4px;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      > .data {
+        display: flex;
+        align-items: center;
+        gap: 0 6px;
+        .v-link {
+          font-size: 12px;
+          color: var(--black-a60);
+        }
+        .dot {
+          width: 2px;
+          height: 2px;
+          background-color: var(--black-a60);
+        }
+      }
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      justify-content: space-between;
+      padding: 18px 12px 9px;
+      .v-button {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--black-a60);
+        gap: 0 4px;
+        svg {
+          fill: var(--black-a60);
+        }
+      }
+    }
+  }
+}
