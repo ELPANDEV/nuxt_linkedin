@@ -1,20 +1,15 @@
 .v-body {
   width: 100%;
+}
+
+.v-body.x-feed-index {
   > * {
     display: grid;
     gap: 8px 0;
   }
-}
-
-.v-body.x-feed-index {
   .v-button {
     &.v-expander {
       margin: 0 auto;
-    }
-  }
-  .sidebar-right {
-    .sticky {
-      position: sticky;
     }
   }
 }
