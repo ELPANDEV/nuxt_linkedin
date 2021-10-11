@@ -1,6 +1,6 @@
 <template>
   <picture class="v-picture">
-    <img :lazy-src="src" :alt="alt">
+    <img :lazy-src="`${$config.BASE_URL}${src}`" :alt="alt">
   </picture>
 </template>
 

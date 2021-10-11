@@ -5,7 +5,7 @@
       <p>I created this copy of Linkedin to <b>show my skills to IT recruiters</b>, if you need to watch the code of this page, let me know <b>¿Who are you?</b> and <b>¿Why you need the code?</b>.</p>
       <p>If you are not an IT recruiter leaves this page.</p>
       <div class="buttons">
-        <v-button @click.native="store.alert_copyright_enabled = false">I'm IT Recruiter</v-button>
+        <v-button @click.native="ok()">I'm IT Recruiter</v-button>
         <v-button @click.native="leave()">exit</v-button>
       </div>
     </div>
@@ -16,6 +16,10 @@
 import Vue from 'vue'
 export default Vue.extend({
   methods: {
+    ok() {
+      this.store.alert_copyright_enabled = false
+      this.$router.push('/feed/')
+    },
     leave() {
       window.open('about:blank', '_self')
     }

@@ -1,4 +1,10 @@
 export default {
+  router: {
+    base: process.env.BASE_URL
+  },
+  static: {
+    prefix: false
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -18,7 +24,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: `${process.env.BASE_URL}/favicon.ico` }
     ]
   },
 
@@ -65,8 +71,7 @@ export default {
     }
   },
 
-  // publicRuntimeConfig: {
-  //   BACKEND_URL: process.env.BACKEND_URL || 'http://127.0.0.1:8000',
-  //   STORAGE_URL: process.env.STORAGE_URL || 'https://storage.googleapis.com/local_receta_land',
-  // }
+  publicRuntimeConfig: {
+    BASE_URL: process.env.BASE_URL,
+  }
 }
