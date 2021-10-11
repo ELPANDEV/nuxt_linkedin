@@ -1,0 +1,64 @@
+.v-user-network {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  @include box_rounded;
+  > .v-picture {
+    height: 62px;
+  }
+  > .v-button {
+    &.close {
+      background-color: rgba(0, 0, 0, .5);
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      @include size(32px);
+      border-radius: 100%;
+      svg {
+        @include size(16px);
+        fill: white;
+      }
+    }
+  }
+  > header {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    padding: 32px 12px 12px;
+    .v-picture {
+      @include size(72px);
+      position: absolute;
+      left: 12px;
+      bottom: 100%;
+      transform: translateY(30%);
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    p, span {
+      color: var(--black-a60);
+    }
+    p {
+      font-size: 14px;
+      max-height: 40px;
+      @include line_clamp(2);
+    }
+    span {
+      display: block;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+  }
+  > footer {
+    padding: 0 12px 12px;
+    .v-button {
+      width: 100%;
+      border: 1.5px solid var(--blue-70);
+      color: var(--blue-70);
+      font-weight: 500;
+      padding: 3px 0;
+      border-radius: 24px;
+    }
+  }
+}

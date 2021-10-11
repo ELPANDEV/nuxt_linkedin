@@ -3,6 +3,7 @@
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: 8px 8px 8px 15px;
+  @include box_rounded;
   h3 {
     font-weight: 400;
   }

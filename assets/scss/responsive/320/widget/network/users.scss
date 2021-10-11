@@ -1,0 +1,24 @@
+.v-widget-network-users {
+  display: grid;
+  gap: 12px 0;
+  padding: 15px;
+  @include box_rounded;
+  > header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    h3 {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--black-a60);
+    }
+    .v-button {
+      color: var(--black-a60);
+      font-weight: 500;
+    }
+  }
+  > .body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+    gap: 12px;
+  }
+}

@@ -20,13 +20,6 @@
   }
 }
 
-@mixin overflow_ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-@mixin size($size) {
-  width: $size;
-  height: $size;
-}
+@import './mixins/box-rounded.scss';
+@import './mixins/line_clamp.scss';
+@import './mixins/size.scss';

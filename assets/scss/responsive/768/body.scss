@@ -23,9 +23,18 @@
   display: grid;
   grid-template-columns: 300px 396px;
   justify-content: center;
+  > * {
+    align-content: baseline;
+  }
   > .sidebar-left {
+    @include box_rounded;
     display: grid;
     gap: 1px 0;
     background-color: var(--warm-gray-30);
+    height: fit-content;
+  }
+  > .sidebar-right {
+    display: grid;
+    gap: 18px 0;
   }
 }

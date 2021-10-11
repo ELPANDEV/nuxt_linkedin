@@ -1,5 +1,5 @@
 <template>
-  <section class="v-widget-network-invitation m-widget">
+  <section class="v-widget-network-invitation">
     <h3>Ninguna invitación pendiente</h3>
     <v-button>Gestionar</v-button>
   </section>

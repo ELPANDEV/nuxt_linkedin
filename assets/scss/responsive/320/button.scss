@@ -17,6 +17,10 @@
     gap: 0 8px;
     align-items: center;
   }
+  &.center {
+    display: grid;
+    place-items: center;
+  }
 }
 
 .v-button.v-expander {
