@@ -4,7 +4,7 @@
     :class="{ enabled }"
     @click.native="change()"
   >
-    Mostrar más
+    Mostrar {{ enabled ? 'menos' : 'más' }}
     <v-svg-arrow-down-larger />
   </v-button>
 </template>

@@ -1,0 +1,33 @@
+.v-widget-network-information {
+  display: grid;
+  background-color: white;
+  > header {
+    padding: 12px 12px 6px 12px;
+    h3 {
+      font-weight: 400;
+    }
+  }
+  > .body {
+    .v-link {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 0 18px;
+      padding: 6px 18px;
+      .title, .counter {
+        color: var(--black-a60);
+      }
+      .title {
+        width: 100%;
+      }
+      svg {
+        fill: var(--black-a60);
+      }
+    }
+  }
+  > footer {
+    padding: 6px 18px 12px;
+    .v-button.v-expander {
+      font-size: 16px;
+    }
+  }
+}

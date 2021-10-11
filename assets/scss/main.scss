@@ -2,6 +2,7 @@
 @import './variables.scss';
 @import './mixins.scss';
 @import './formatter.scss';
+@import './styles.scss';
 
 @import './responsive/320/layouts/default.scss';
 
@@ -19,6 +20,7 @@
 @import './responsive/320/widget/post-creator.scss';
 @import './responsive/320/widget/advertisement.scss';
 @import './responsive/320/widget/about.scss';
+@import './responsive/320/widget/network/information.scss';
 @import './responsive/320/user-suggestion.scss';
 
 @media screen and (min-width: $w360) {

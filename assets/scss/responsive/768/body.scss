@@ -1,3 +1,10 @@
+.v-body {
+  .sticky {
+    position: sticky;
+    top: 76px;
+  }
+}
+
 .v-body.x-feed-index {
   display: grid;
   grid-template-columns: 204px 494px;
@@ -10,8 +17,15 @@
       display: none;
     }
   }
-  .sticky {
-    position: sticky;
-    top: 76px;
+}
+
+.v-body.x-network-index {
+  display: grid;
+  grid-template-columns: 300px 396px;
+  justify-content: center;
+  > .sidebar-left {
+    display: grid;
+    gap: 1px 0;
+    background-color: var(--warm-gray-30);
   }
 }
