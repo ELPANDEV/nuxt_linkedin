@@ -5,10 +5,7 @@
       <v-widget-advertisement />
     </div>
     <div class="sidebar-right">
-      <div class="m-widget">
-        <span>Ninguna invitación pendiente</span>
-        <v-button>Gestionar</v-button>
-      </div>
+      <v-widget-network-invitation />
     </div>
   </v-body>
 </template>
